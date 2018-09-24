@@ -25,4 +25,7 @@ sql_query_pandas(query)
 
   - Similar to SQL_read, but return data in a Pandas table
   
-  
+# Connecti string format
+connectionString = 'DSN= ;  database=  ;UID=   ;PWD=   '
+
+Please fill in the variables. Refer to your database engine. 
