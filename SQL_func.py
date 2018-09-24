@@ -76,9 +76,8 @@ def sql_nonquery_db(conn_str, stmt):
     return status_bool
 
 
-def sql_query_pandas(query):
+def sql_query_pandas(connstring, query):
     """Execute query in SQL that returns a dataframe and pandas (select *, etc)"""
-    connectionString = 'DSN=INDEXDB_ODBC_USNPSW;database=INDEXDB;UID=INDEXDB;PWD=equityportfoliotrading'
     cnxn = pyodbc.connect(connectionString)
     cursor = cnxn.cursor()
     cursor.execute(query)
